@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     ResultModule
-  ]
+  ],
+  exports: [TypeaheadComponent]
 })
 export class TypeaheadModule { }

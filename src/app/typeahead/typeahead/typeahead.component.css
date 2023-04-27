@@ -1,3 +1,23 @@
-select {
-    padding: 5px;
+select, label, input,  button, option {
+    padding: 10px;
+    margin: 5px;
+}
+table {
+    margin-top: 1rem;
+    width: 50%;
+  }
+  
+  td {
+    width: 50%;
+    border-bottom: 1px solid grey;
+  }
+  
+td.heading {
+  font-weight: bold;
+  width: 40%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
 }
