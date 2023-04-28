@@ -9,7 +9,7 @@ import { Observable, catchError, of } from 'rxjs';
 })
 export class WikipediaService {
 
-  private url = environment.wikiBaseUrl;
+  private url = environment.wikipediaBaseUrl;
   constructor(private http:  HttpClient) { }
 
   searchWikipedia(term: string, category: string){
