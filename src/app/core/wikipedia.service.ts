@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {  Wikipedia } from '../shared/wikipedia.model';
+import { Wikipedia } from '../shared/wikipedia.model';
 import { environment } from 'src/environments/environment';
 import { Observable, catchError, of } from 'rxjs';
 
