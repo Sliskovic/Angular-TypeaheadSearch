@@ -1,18 +1,22 @@
 <form [formGroup]="form" role="search">
     <div class="input" role="combobox" aria-haspopup="listbox" aria-expanded="false">
-        <input id="input" formControlName="searchInput" placeholder="Search Wikipedia" (keyup)="onInputChange()"/>
+        <input id="input" formControlName="searchInput" placeholder="Search Wikipedia" (keyup)="onInputChange()" />
     </div>
-  <div class="select" role="combobox" aria-haspopup="listbox" aria-expanded="false">
-    <!-- <label for="category">Category:</label> -->
-        <select id="category" formControlName="category" aria-label="Select a category" aria-required="true" role="listbox">
+    <div class="select" role="combobox" aria-haspopup="listbox" aria-expanded="false">
+        <select id="category" formControlName="category" aria-label="Select a category" aria-required="true"
+            role="listbox">
             <option value="" selected disabled>Select Category</option>
-            <option  *ngFor="let category of allCategories" value="category.name">{{ category.name }}</option>
+            <option *ngFor="let category of allCategories">{{ category.name }}</option>
         </select>
-  </div>
-   <div>
-    <button type="submit" aria-label="Search">Search</button>
-   </div>
+    </div>
+    <div>
+        <button type="submit" aria-label="Search" (click)="searchWikipedia()">Search</button>
+    </div>
 </form>
+
+
+<!-- <app-result></app-result> -->
+
 
 <!-- <br><br>
 <hr>
@@ -25,6 +29,3 @@
     <option value="" selected disabled>Select Category</option>
     <option *ngFor="let result of allCategories">{{ result.name }}</option>
 </select> -->
-
-
-<!-- <app-result [allWkipedia] = "allWkipedia"></app-result> -->
